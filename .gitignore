@@ -1,0 +1,7 @@
+__pycache__/
+*.py[cod]
+.venv/
+venv/
+.env
+data/leads/*.csv
+!data/leads/.gitkeep
