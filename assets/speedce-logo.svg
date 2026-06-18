@@ -6,36 +6,5 @@
       <stop offset="100%" stop-color="#a855f7"/>
     </linearGradient>
   </defs>
-
-  <g transform="translate(400 285)" fill="none" stroke="url(#brand)" stroke-linecap="round" stroke-linejoin="round">
-    <path d="M-155 -55 A 155 155 0 0 1 155 -55" stroke-width="15"/>
-    <g stroke-width="4.5" opacity="0.95">
-      <line x1="-135" y1="-35" x2="-123" y2="-39"/>
-      <line x1="-98" y1="-88" x2="-88" y2="-80"/>
-      <line x1="-42" y1="-122" x2="-38" y2="-110"/>
-      <line x1="18" y1="-132" x2="20" y2="-119"/>
-      <line x1="78" y1="-114" x2="72" y2="-103"/>
-      <line x1="125" y1="-72" x2="114" y2="-66"/>
-    </g>
-
-    <circle cx="0" cy="0" r="74" stroke-width="7.5"/>
-    <ellipse cx="0" cy="0" rx="30" ry="74" stroke-width="4.5"/>
-    <ellipse cx="0" cy="0" rx="74" ry="30" stroke-width="4.5"/>
-    <line x1="-74" y1="0" x2="74" y2="0" stroke-width="4.5"/>
-    <line x1="0" y1="-74" x2="0" y2="74" stroke-width="4.5"/>
-    <circle cx="0" cy="-74" r="6.5" fill="#0ea5e9" stroke="none"/>
-    <circle cx="54" cy="0" r="6.5" fill="#6366f1" stroke="none"/>
-    <circle cx="0" cy="74" r="6.5" fill="#a855f7" stroke="none"/>
-    <circle cx="-54" cy="0" r="6.5" fill="#6366f1" stroke="none"/>
-
-    <path d="M-110 72 L108 72 L82 50 L132 50 L42 -8 L-6 50 L48 50 Z" fill="url(#brand)" stroke="none"/>
-    <g stroke="url(#brand)" stroke-width="6.5" opacity="0.9">
-      <line x1="-165" y1="92" x2="-110" y2="92"/>
-      <line x1="-178" y1="112" x2="-100" y2="112"/>
-      <line x1="-148" y1="132" x2="-90" y2="132"/>
-    </g>
-  </g>
-
-  <text x="400" y="505" text-anchor="middle" fill="url(#brand)" font-family="Segoe UI, system-ui, sans-serif" font-size="106" font-weight="800" letter-spacing="1">SpeedCE</text>
-  <text x="400" y="562" text-anchor="middle" fill="#94a3b8" font-family="Segoe UI, system-ui, sans-serif" font-size="29" font-weight="500" letter-spacing="2.5">Website / IP Speed Test</text>
+  <text x="400" y="430" text-anchor="middle" fill="url(#brand)" font-family="Segoe UI, system-ui, sans-serif" font-size="120" font-weight="800" letter-spacing="2">SpeedCE</text>
 </svg>
