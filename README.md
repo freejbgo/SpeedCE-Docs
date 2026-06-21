@@ -4,6 +4,22 @@
 
 只做 **公开信息** 的被动/轻量主动探测（DNS + 首页 HTTP），用于发现「可能有 CDN 痛点」的合规中小企业，不用于骚扰式爬取或灰产拓客。
 
+## 文档
+
+项目中所有 **查询、探测、筛选** 用法已整理至 [`docs/`](docs/README.md)：
+
+| 文档 | 内容 |
+|------|------|
+| [查询总览](docs/queries/overview.md) | 全流程数据流与字段说明 |
+| [种子来源查询](docs/queries/seed-sources.md) | Tranco、crt.sh、行业目录 |
+| [DNS 查询](docs/queries/dns-queries.md) | CNAME 链、A 记录 |
+| [HTTP 探测](docs/queries/http-probes.md) | 首页 TTFB、响应头 |
+| [CDN 指纹库](docs/queries/cdn-fingerprints.md) | DNS/HTTP 完整对照表 |
+| [评分规则](docs/queries/scoring-rules.md) | hot/warm/cool 分级 |
+| [线索筛选查询](docs/queries/lead-filters.md) | CSV/jq 筛选示例 |
+| [CLI 命令参考](docs/cli-reference.md) | 全部子命令 |
+| [工作流与触达](docs/workflow.md) | 周循环、合规、邮件模板 |
+
 ## 流程总览
 
 ```mermaid
