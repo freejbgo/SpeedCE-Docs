@@ -121,12 +121,6 @@
 - **案例故事**：10 篇
 - **行业应用**：10 篇
 
-## 生成脚本
-
-- 第一批：`python3 scripts/generate_speedce_articles.py`
-- 第二批：`python3 scripts/generate_speedce_articles_batch2.py`
-- 全部重建：`python3 scripts/generate_all_speedce_articles.py`
-
 ---
 
 SpeedCE — 覆盖中国各省市 · 全球节点 · 一键检测网络连通性
