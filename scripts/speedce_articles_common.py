@@ -126,25 +126,12 @@ def _build_readme_lines(all_articles: list, article_link_prefix: str) -> list[st
         f"> 工具官网：[speedce.com]({BASE_URL}) | 中文版：[?lang=zh-CN]({ZH_URL})",
         f"> 联系：{CONTACT}",
         "",
-        "## 第一批（001–050）",
+        "## 文章索引",
         "",
         "| 序号 | 标题 | 分类 | 文件 |",
         "|------|------|------|------|",
     ]
-    for a in sorted([x for x in all_articles if x["id"] <= 50], key=lambda x: x["id"]):
-        fn = f"{a['id']:03d}-{a['slug']}.md"
-        lines.append(
-            f"| {a['id']} | {a['title']} | {a['category']} | [{fn}]({article_link_prefix}{fn}) |"
-        )
-
-    lines.extend([
-        "",
-        "## 第二批（051–100）",
-        "",
-        "| 序号 | 标题 | 分类 | 文件 |",
-        "|------|------|------|------|",
-    ])
-    for a in sorted([x for x in all_articles if x["id"] > 50], key=lambda x: x["id"]):
+    for a in sorted(all_articles, key=lambda x: x["id"]):
         fn = f"{a['id']:03d}-{a['slug']}.md"
         lines.append(
             f"| {a['id']} | {a['title']} | {a['category']} | [{fn}]({article_link_prefix}{fn}) |"
