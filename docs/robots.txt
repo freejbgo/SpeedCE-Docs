@@ -1,4 +1,4 @@
 User-agent: *
 Allow: /
 
-Sitemap: https://freejbgo.github.io/speedce-docs/sitemap.xml
+Sitemap: https://freejbgo.github.io/SpeedCE-Docs/sitemap.xml

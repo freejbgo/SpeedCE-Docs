@@ -7,7 +7,7 @@ import yaml
 
 DOCS_DIR = Path(__file__).resolve().parent.parent / "docs"
 ARTICLES_DIR = DOCS_DIR / "articles"
-BASE_URL = "https://freejbgo.github.io/speedce-docs"
+BASE_URL = "https://freejbgo.github.io/SpeedCE-Docs"
 
 
 def parse_front_matter(path: Path) -> dict:
