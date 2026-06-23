@@ -607,53 +607,14 @@ url: {BASE_URL}
 
 
 def main():
-    ARTICLES_DIR.mkdir(parents=True, exist_ok=True)
-    index_lines = [
-        "# SpeedCE 技术推广软文全集（50 篇）",
-        "",
-        f"> 工具官网：[speedce.com]({BASE_URL}) | 中文版：[?lang=zh-CN]({ZH_URL})",
-        f"> 联系：{CONTACT}",
-        "",
-        "## 目录",
-        "",
-        "| 序号 | 标题 | 分类 | 文件 |",
-        "|------|------|------|------|",
-    ]
+    import sys
+    from pathlib import Path
 
-    for article in ARTICLES:
-        num = article["id"]
-        filename = f"{num:03d}-{article['slug']}.md"
-        filepath = ARTICLES_DIR / filename
-        filepath.write_text(render_article(article), encoding="utf-8")
-        index_lines.append(
-            f"| {num} | {article['title']} | {article['category']} | [{filename}](./{filename}) |"
-        )
+    sys.path.insert(0, str(Path(__file__).resolve().parent))
+    from speedce_articles_common import write_articles, write_readme
 
-    # Category summary
-    cats = {}
-    for a in ARTICLES:
-        cats.setdefault(a["category"], []).append(a)
-    index_lines.extend(["", "## 分类统计", ""])
-    for cat, items in cats.items():
-        index_lines.append(f"- **{cat}**：{len(items)} 篇")
-
-    index_lines.extend([
-        "",
-        "## 使用说明",
-        "",
-        "1. 每篇可独立发布到博客、论坛、导航站投稿、公众号等渠道",
-        "2. 发布前请根据平台规则调整语气，避免硬广堆砌",
-        "3. 建议配图：SpeedCE 中国/全球节点地图截图",
-        "4. 站内 SEO 发布时保留关键词与官网链接",
-        "",
-        "## 相关长文",
-        "",
-        "- [产品介绍](../speedce-推广文章.md)",
-        "- [实战排查手册](../speedce-推广文章-实战排查手册.md)",
-        "- [2026 工具横评](../speedce-2026在线网站测速工具横评.md)",
-    ])
-
-    (ARTICLES_DIR / "README.md").write_text("\n".join(index_lines) + "\n", encoding="utf-8")
+    write_articles(ARTICLES)
+    write_readme(ARTICLES)
     print(f"Generated {len(ARTICLES)} articles in {ARTICLES_DIR}")
 
 

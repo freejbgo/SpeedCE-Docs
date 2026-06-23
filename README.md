@@ -1,56 +1,137 @@
-# SpeedCE 站长知识库（SpeedCE-Docs）
+# SpeedCE 站长知识库
 
 > 多节点网站测速 · 网络排障 · 100 篇站长技术文章
+> 工具官网：[speedce.com](https://www.speedce.com) | 中文版：[?lang=zh-CN](https://speedce.com/?lang=zh-CN)
+> 联系：speedceads@gmail.com
 
-**在线文档站：** https://freejbgo.github.io/SpeedCE-Docs/
+## 第一批（001–050）
 
-| 入口 | 链接 |
-|------|------|
-| SpeedCE 官网 | https://www.speedce.com |
-| 中文版测速 | https://speedce.com/?lang=zh-CN |
-| 全部文章目录 | [docs/articles/README.md](docs/articles/README.md) |
-| 按分类浏览 | [docs/categories.md](docs/categories.md) |
-| GitHub 仓库 | https://github.com/freejbgo/SpeedCE-Docs |
+| 序号 | 标题 | 分类 | 文件 |
+|------|------|------|------|
+| 1 | 什么是多节点网站测速？为什么站长不能只 ping 一次 | 基础知识 | [001-什么是多节点网站测速.md](docs/articles/001-什么是多节点网站测速.md) |
+| 2 | HTTP、HTTPS、PING 三种测速协议详解与选型指南 | 基础知识 | [002-HTTP-HTTPS-PING协议详解.md](docs/articles/002-HTTP-HTTPS-PING协议详解.md) |
+| 3 | 中国电信、联通、移动三网测速为什么要分开看 | 基础知识 | [003-电信联通移动三网测速.md](docs/articles/003-电信联通移动三网测速.md) |
+| 4 | 2026 年站长必备的在线测速检查清单 | 基础知识 | [004-2026站长测速检查清单.md](docs/articles/004-2026站长测速检查清单.md) |
+| 5 | IPv4 与 IPv6 双栈网站如何用在线工具验证 | 基础知识 | [005-IPv4-IPv6双栈测速验证.md](docs/articles/005-IPv4-IPv6双栈测速验证.md) |
+| 6 | 域名、子域名、多级域名测速有什么不同 | 基础知识 | [006-子域名与多级域名测速.md](docs/articles/006-子域名与多级域名测速.md) |
+| 7 | 在线测速与本地 ping 的本质区别 | 基础知识 | [007-在线测速与本地ping区别.md](docs/articles/007-在线测速与本地ping区别.md) |
+| 8 | 网站测速结果里的延迟到底代表什么 | 基础知识 | [008-测速延迟代表什么.md](docs/articles/008-测速延迟代表什么.md) |
+| 9 | 如何从测速地图判断是区域性故障还是全局故障 | 基础知识 | [009-从地图判断区域性故障.md](docs/articles/009-从地图判断区域性故障.md) |
+| 10 | 免费在线测速工具的安全边界：为什么不能测内网 IP | 基础知识 | [010-在线测速安全边界.md](docs/articles/010-在线测速安全边界.md) |
+| 11 | SpeedCE 是什么？一款专注地图可视化的多节点测速平台 | 产品专题 | [011-SpeedCE产品介绍.md](docs/articles/011-SpeedCE产品介绍.md) |
+| 12 | SpeedCE 中国节点地图功能深度解读 | 产品专题 | [012-SpeedCE中国节点地图解读.md](docs/articles/012-SpeedCE中国节点地图解读.md) |
+| 13 | SpeedCE 全球节点测速：出海业务怎么用 | 产品专题 | [013-SpeedCE全球节点出海.md](docs/articles/013-SpeedCE全球节点出海.md) |
+| 14 | 三步完成 SpeedCE 网站测速：新手图文教程 | 产品专题 | [014-SpeedCE三步上手教程.md](docs/articles/014-SpeedCE三步上手教程.md) |
+| 15 | SpeedCE 支持哪些输入格式？域名与 IP 测速指南 | 产品专题 | [015-SpeedCE输入格式指南.md](docs/articles/015-SpeedCE输入格式指南.md) |
+| 16 | SpeedCE 电信/联通/移动筛选功能实战技巧 | 产品专题 | [016-SpeedCE三网筛选技巧.md](docs/articles/016-SpeedCE三网筛选技巧.md) |
+| 17 | SpeedCE 多语言界面使用指南 | 产品专题 | [017-SpeedCE多语言界面.md](docs/articles/017-SpeedCE多语言界面.md) |
+| 18 | SpeedCE HTTPS 测速：SSL 证书问题的第一道防线 | 产品专题 | [018-SpeedCE-HTTPS证书检测.md](docs/articles/018-SpeedCE-HTTPS证书检测.md) |
+| 19 | SpeedCE PING 测速：VPS 线路验证最快方法 | 产品专题 | [019-SpeedCE-PING验VPS.md](docs/articles/019-SpeedCE-PING验VPS.md) |
+| 20 | SpeedCE 与 PageSpeed：两种「测速」如何配合使用 | 产品专题 | [020-SpeedCE与PageSpeed配合.md](docs/articles/020-SpeedCE与PageSpeed配合.md) |
+| 21 | 买 VPS 前必做：用多节点测速验证商家线路 | 场景实战 | [021-买VPS前多节点验线.md](docs/articles/021-买VPS前多节点验线.md) |
+| 22 | 服务器迁机后如何用测速工具验收 DNS 生效 | 场景实战 | [022-迁机DNS验收测速.md](docs/articles/022-迁机DNS验收测速.md) |
+| 23 | 接入 CDN 后源站与加速域名的对照测速法 | 场景实战 | [023-CDN源站对照测速.md](docs/articles/023-CDN源站对照测速.md) |
+| 24 | HTTPS 证书过期了？地图会告诉你真相 | 场景实战 | [024-证书过期地图检测.md](docs/articles/024-证书过期地图检测.md) |
+| 25 | 子域名 api.example.com 打不开？独立排查指南 | 场景实战 | [025-子域名API独立排查.md](docs/articles/025-子域名API独立排查.md) |
+| 26 | WordPress 站点迁移后的全国可达性检测 | 场景实战 | [026-WordPress迁移测速.md](docs/articles/026-WordPress迁移测速.md) |
+| 27 | 跨境电商独立站：国内与海外节点都要测 | 场景实战 | [027-跨境电商双节点检测.md](docs/articles/027-跨境电商双节点检测.md) |
+| 28 | 游戏服务器延迟高？先测网络层再怪程序 | 场景实战 | [028-游戏服务器延迟排查.md](docs/articles/028-游戏服务器延迟排查.md) |
+| 29 | 小程序后端 API 宕机的网络层快速定性 | 场景实战 | [029-小程序API网络定性.md](docs/articles/029-小程序API网络定性.md) |
+| 30 | 公司内网能开、用户外网打不开：测速定位四步法 | 场景实战 | [030-内网能开外网不能开.md](docs/articles/030-内网能开外网不能开.md) |
+| 31 | 网站测速工具哪个好？2026 年轻量型选手 SpeedCE 体验 | 推广种草 | [031-轻量测速工具推荐.md](docs/articles/031-轻量测速工具推荐.md) |
+| 32 | 看懂测速地图：比表格快十倍的可视化排障 | 推广种草 | [032-地图比表格快十倍.md](docs/articles/032-地图比表格快十倍.md) |
+| 33 | 为什么越来越多站长收藏「双地图」测速工具 | 推广种草 | [033-双地图测速趋势.md](docs/articles/033-双地图测速趋势.md) |
+| 34 | 零注册测速：SpeedCE 的零门槛设计理念 | 推广种草 | [034-零注册测速理念.md](docs/articles/034-零注册测速理念.md) |
+| 35 | 运维工单回复模板：附带测速截图的专业沟通 | 推广种草 | [035-运维工单回复模板.md](docs/articles/035-运维工单回复模板.md) |
+| 36 | 个人博客上线前最后的网络检测步骤 | 推广种草 | [036-个人博客上线检测.md](docs/articles/036-个人博客上线检测.md) |
+| 37 | 企业官网 SLA 争议中的第三方测速证据 | 推广种草 | [037-企业SLA测速证据.md](docs/articles/037-企业SLA测速证据.md) |
+| 38 | 从测速异常到 Nginx 配置：常见修复路径 | 推广种草 | [038-测速异常到Nginx修复.md](docs/articles/038-测速异常到Nginx修复.md) |
+| 39 | 测速频率建议：什么时候测一次、三次还是持续测 | 推广种草 | [039-测速频率建议.md](docs/articles/039-测速频率建议.md) |
+| 40 | 收藏夹里的测速工具组合：SpeedCE + ITDOG + BOCE | 推广种草 | [040-测速工具组合收藏.md](docs/articles/040-测速工具组合收藏.md) |
+| 41 | 北京上海广东都正常，西北红了：线路优化案例 | 案例故事 | [041-西北区域线路案例.md](docs/articles/041-西北区域线路案例.md) |
+| 42 | 全国 HTTPS 红、HTTP 绿：证书问题实战 | 案例故事 | [042-全国HTTPS红HTTP绿.md](docs/articles/042-全国HTTPS红HTTP绿.md) |
+| 43 | PING 全超时但网页能开：禁 Ping 不等于网站挂了 | 案例故事 | [043-PING超时HTTPS正常.md](docs/articles/043-PING超时HTTPS正常.md) |
+| 44 | 移动用户专属卡顿：三网分离体检发现真相 | 案例故事 | [044-移动用户卡顿案例.md](docs/articles/044-移动用户卡顿案例.md) |
+| 45 | 海外绿国内红：跨境业务测速典型图谱解读 | 案例故事 | [045-海外绿国内红案例.md](docs/articles/045-海外绿国内红案例.md) |
+| 46 | 间歇性超时：如何用多次测速抓幽灵故障 | 案例故事 | [046-间歇性故障多次测速.md](docs/articles/046-间歇性故障多次测速.md) |
+| 47 | 新购域名解析未生效：测速地图的时间变化规律 | 案例故事 | [047-DNS未生效时间规律.md](docs/articles/047-DNS未生效时间规律.md) |
+| 48 | 防火墙误封 443 端口：测速如何帮你五分钟定位 | 案例故事 | [048-防火墙封443案例.md](docs/articles/048-防火墙封443案例.md) |
+| 49 | 共用 IP 虚拟主机被邻居牵连：多节点异常模式 | 案例故事 | [049-虚拟主机邻居牵连.md](docs/articles/049-虚拟主机邻居牵连.md) |
+| 50 | 2026 站长工具新趋势：地图测速、AI 拨测与 SpeedCE 的定位 | 案例故事 | [050-2026测速趋势与SpeedCE.md](docs/articles/050-2026测速趋势与SpeedCE.md) |
 
-## 仓库内容
+## 第二批（051–100）
 
-- **100 篇技术文章** — `docs/articles/`（基础知识、产品专题、场景实战、SEO 长尾、云架构、行业应用等）
-- **GitHub Pages 文档站** — `docs/` 目录，Jekyll 自动构建
-- **生成脚本** — `scripts/` 软文生成与站点资源生成
+| 序号 | 标题 | 分类 | 文件 |
+|------|------|------|------|
+| 51 | 网站打不开怎么办？先用 SpeedCE 五分钟定性故障范围 | SEO长尾 | [051-网站打不开怎么办.md](docs/articles/051-网站打不开怎么办.md) |
+| 52 | 在线 Ping 检测工具推荐：2026 站长实用版 | SEO长尾 | [052-在线ping检测工具推荐.md](docs/articles/052-在线ping检测工具推荐.md) |
+| 53 | 域名测速与 IP 测速：什么时候测哪个？ | SEO长尾 | [053-域名测速与IP测速区别.md](docs/articles/053-域名测速与IP测速区别.md) |
+| 54 | 网站速度测试在线免费：SpeedCE 零门槛全国测速 | SEO长尾 | [054-网站速度测试在线免费.md](docs/articles/054-网站速度测试在线免费.md) |
+| 55 | 全国网站测速工具：为什么要覆盖各省市节点 | SEO长尾 | [055-全国网站测速工具.md](docs/articles/055-全国网站测速工具.md) |
+| 56 | 电信测速在线工具：SpeedCE 电信线路专项检测 | SEO长尾 | [056-电信测速在线工具.md](docs/articles/056-电信测速在线工具.md) |
+| 57 | 联通测速在线检测：如何验证联通用户访问质量 | SEO长尾 | [057-联通测速在线检测.md](docs/articles/057-联通测速在线检测.md) |
+| 58 | 移动网络测速网站：移动端用户卡顿怎么查 | SEO长尾 | [058-移动网络测速网站.md](docs/articles/058-移动网络测速网站.md) |
+| 59 | 海外网站测速：国内用户访问外国服务器怎么测 | SEO长尾 | [059-海外网站测速国内.md](docs/articles/059-海外网站测速国内.md) |
+| 60 | 服务器延迟测试在线：PING 与 HTTPS 怎么选 | SEO长尾 | [060-服务器延迟测试在线.md](docs/articles/060-服务器延迟测试在线.md) |
+| 61 | SpeedCE 通畅率怎么解读？统计栏数字完全指南 | 产品专题 | [061-SpeedCE通畅率解读.md](docs/articles/061-SpeedCE通畅率解读.md) |
+| 62 | SpeedCE 地图上「检测中」「等待」是什么意思？ | 产品专题 | [062-SpeedCE地图状态说明.md](docs/articles/062-SpeedCE地图状态说明.md) |
+| 63 | SpeedCE 和 ITDOG 怎么选？一张表看懂差异 | 产品专题 | [063-SpeedCE-vs-ITDOG选型.md](docs/articles/063-SpeedCE-vs-ITDOG选型.md) |
+| 64 | SpeedCE 与 BOCE 如何配合？轻量地图 + 全能运维 | 产品专题 | [064-SpeedCE-vs-BOCE配合.md](docs/articles/064-SpeedCE-vs-BOCE配合.md) |
+| 65 | SpeedCE 测速截图发工单的 5 个技巧 | 产品专题 | [065-SpeedCE截图工单技巧.md](docs/articles/065-SpeedCE截图工单技巧.md) |
+| 66 | SpeedCE「停止测试」：节点多的时候如何节省时间 | 产品专题 | [066-SpeedCE停止测试功能.md](docs/articles/066-SpeedCE停止测试功能.md) |
+| 67 | SpeedCE 点击通畅/异常数字筛选节点列表 | 产品专题 | [067-SpeedCE筛选点击统计.md](docs/articles/067-SpeedCE筛选点击统计.md) |
+| 68 | SpeedCE 港澳台节点：大陆业务为什么要看 | 产品专题 | [068-SpeedCE港澳台节点.md](docs/articles/068-SpeedCE港澳台节点.md) |
+| 69 | SpeedCE 全球节点：亚太、欧美业务各看什么 | 产品专题 | [069-SpeedCE全球节点亚太.md](docs/articles/069-SpeedCE全球节点亚太.md) |
+| 70 | SpeedCE 为什么拒绝内网地址？安全设计解读 | 产品专题 | [070-SpeedCE私有IP拦截说明.md](docs/articles/070-SpeedCE私有IP拦截说明.md) |
+| 71 | 阿里云 ECS 迁机后 SpeedCE 验收三步法 | 云与架构 | [071-阿里云ECS迁机SpeedCE验收.md](docs/articles/071-阿里云ECS迁机SpeedCE验收.md) |
+| 72 | 腾讯云 CVM 网站上线：全国可达性 SpeedCE 检测 | 云与架构 | [072-腾讯云CVM测速验收.md](docs/articles/072-腾讯云CVM测速验收.md) |
+| 73 | Cloudflare 橙云开启前后：SpeedCE 对照测速法 | 云与架构 | [073-Cloudflare橙云对照测速.md](docs/articles/073-Cloudflare橙云对照测速.md) |
+| 74 | Nginx 反向代理上线后：为什么要做全国拨测 | 云与架构 | [074-Nginx反代上线拨测.md](docs/articles/074-Nginx反代上线拨测.md) |
+| 75 | Docker 端口映射错误：SpeedCE 如何从外网发现 | 云与架构 | [075-Docker端口映射测速.md](docs/articles/075-Docker端口映射测速.md) |
+| 76 | Kubernetes Ingress 配错了？地图会显示省份级异常 | 云与架构 | [076-K8s-Ingress测速.md](docs/articles/076-K8s-Ingress测速.md) |
+| 77 | 对象存储静态网站托管：全国访问 SpeedCE 检测 | 云与架构 | [077-OSS静态托管测速.md](docs/articles/077-OSS静态托管测速.md) |
+| 78 | Vercel / GitHub Pages 国内访问：SpeedCE 实测思路 | 云与架构 | [078-Vercel国内访问测速.md](docs/articles/078-Vercel国内访问测速.md) |
+| 79 | API 网关返回 502：SpeedCE 网络层初筛指南 | 云与架构 | [079-API网关502初筛.md](docs/articles/079-API网关502初筛.md) |
+| 80 | 负载均衡后端健康检查正常，但用户仍报错？ | 云与架构 | [080-负载均衡健康检查对照.md](docs/articles/080-负载均衡健康检查对照.md) |
+| 81 | 电商大促前除了压测，还要做全国可达性检测 | 行业应用 | [081-电商大促前测速.md](docs/articles/081-电商大促前测速.md) |
+| 82 | 在线教育开课前的全国测速：避免「能进教室吗」翻车 | 行业应用 | [082-在线教育开课测速.md](docs/articles/082-在线教育开课测速.md) |
+| 83 | 医疗挂号系统：为什么可用性地图比平均延迟重要 | 行业应用 | [083-医疗挂号系统测速.md](docs/articles/083-医疗挂号系统测速.md) |
+| 84 | 金融类网站 HTTPS 巡检：证书与全国可达一并看 | 行业应用 | [084-金融HTTPS巡检.md](docs/articles/084-金融HTTPS巡检.md) |
+| 85 | 政务网站分省访问一致性：多节点检测实践 | 行业应用 | [085-政务分省一致性.md](docs/articles/085-政务分省一致性.md) |
+| 86 | 新闻站点突发流量下的间歇性测速策略 | 行业应用 | [086-新闻站点突发流量.md](docs/articles/086-新闻站点突发流量.md) |
+| 87 | SaaS 多租户自定义域名：批量巡检思路 | 行业应用 | [087-SaaS多租户域名巡检.md](docs/articles/087-SaaS多租户域名巡检.md) |
+| 88 | 广告投放落地页：投放省份与 SpeedCE 地图交叉验证 | 行业应用 | [088-落地页地域定向验证.md](docs/articles/088-落地页地域定向验证.md) |
+| 89 | 海外华人访问国内站：全球节点 + 中国节点对照 | 行业应用 | [089-海外华人访问国内站.md](docs/articles/089-海外华人访问国内站.md) |
+| 90 | 直播业务播放域名与推流域名的分别测速 | 行业应用 | [090-直播推流域名检测.md](docs/articles/090-直播推流域名检测.md) |
+| 91 | HostLoc 发帖必备：SpeedCE 测速截图规范 | 内容运营 | [091-HostLoc发帖截图规范.md](docs/articles/091-HostLoc发帖截图规范.md) |
+| 92 | 导航站投稿 SpeedCE 描述文案模板（可直接复制） | 内容运营 | [092-导航站投稿文案模板.md](docs/articles/092-导航站投稿文案模板.md) |
+| 93 | 知乎回答「有哪些好用的网站测速工具」SpeedCE 版 | 内容运营 | [093-知乎测速工具回答.md](docs/articles/093-知乎测速工具回答.md) |
+| 94 | 公众号推文选题：一张地图搞懂全国网站访问质量 | 内容运营 | [094-公众号地图推文.md](docs/articles/094-公众号地图推文.md) |
+| 95 | 独立开发者产品发布前：5 分钟网络自检 | 内容运营 | [095-独立开发者发布自检.md](docs/articles/095-独立开发者发布自检.md) |
+| 96 | 博客从 Hexo/GitHub 迁到自建站：测速对比记录 | 内容运营 | [096-技术博客迁移测速.md](docs/articles/096-技术博客迁移测速.md) |
+| 97 | 开源项目官网上线：SpeedCE 检查清单 | 内容运营 | [097-开源项目官网上线.md](docs/articles/097-开源项目官网上线.md) |
+| 98 | 远程办公运维：不连 VPN 也能验证网站全国状态 | 内容运营 | [098-远程运维验站.md](docs/articles/098-远程运维验站.md) |
+| 99 | SpeedCE 站内 SEO：100 篇软文如何布局长尾词 | 内容运营 | [099-SEO长尾词布局策略.md](docs/articles/099-SEO长尾词布局策略.md) |
+| 100 | 百篇 SpeedCE 软文之后：如何建成站长网络排障知识库 | 内容运营 | [100-百篇软文知识库建设.md](docs/articles/100-百篇软文知识库建设.md) |
 
-## 本地预览文档站
+## 分类统计
 
-```bash
-cd docs
-bundle install
-bundle exec jekyll serve
-```
+- **SEO长尾**：10 篇
+- **云与架构**：10 篇
+- **产品专题**：20 篇
+- **内容运营**：10 篇
+- **场景实战**：10 篇
+- **基础知识**：10 篇
+- **推广种草**：10 篇
+- **案例故事**：10 篇
+- **行业应用**：10 篇
 
-访问 http://localhost:4000/SpeedCE-Docs/
+## 生成脚本
 
-## 重新生成站点资源
-
-```bash
-python3 scripts/generate_site_assets.py   # sitemap、robots、分类页、文章导航
-python3 scripts/generate_all_speedce_articles.py  # 重建全部 100 篇软文（可选）
-```
-
-## 开启 GitHub Pages
-
-仓库 **Settings → Pages**：
-
-- Source: **Deploy from a branch**
-- Branch: **main** / **/docs**
-
-保存后文档站发布至 `https://freejbgo.github.io/SpeedCE-Docs/`
-
-> **注意：** 若仓库为 **Private**，免费账号无法对外发布 Pages；需改为 **Public**，或升级 GitHub Pro 才能从私有仓库发布公开 Pages。要做 SEO 收录，建议将仓库设为 **Public**。
-
-## Topics 建议
-
-`speedtest` `network-monitoring` `website-speed-test` `speedce` `devops` `web-performance`
+- 第一批：`python3 scripts/generate_speedce_articles.py`
+- 第二批：`python3 scripts/generate_speedce_articles_batch2.py`
+- 全部重建：`python3 scripts/generate_all_speedce_articles.py`
 
 ---
 
-SpeedCE — 覆盖中国各省市 · 全球节点 · 一键检测网络连通性  
-联系：speedceads@gmail.com
+SpeedCE — 覆盖中国各省市 · 全球节点 · 一键检测网络连通性

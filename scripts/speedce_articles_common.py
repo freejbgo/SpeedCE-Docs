@@ -2,7 +2,10 @@
 
 from pathlib import Path
 
-ARTICLES_DIR = Path(__file__).resolve().parent.parent / "docs" / "articles"
+REPO_ROOT = Path(__file__).resolve().parent.parent
+ARTICLES_DIR = REPO_ROOT / "docs" / "articles"
+ROOT_README = REPO_ROOT / "README.md"
+ARTICLES_README = ARTICLES_DIR / "README.md"
 BASE_URL = "https://www.speedce.com"
 ZH_URL = "https://speedce.com/?lang=zh-CN"
 CONTACT = "speedceads@gmail.com"
@@ -115,10 +118,11 @@ def write_articles(articles: list) -> None:
         (ARTICLES_DIR / filename).write_text(render_article(article), encoding="utf-8")
 
 
-def write_readme(all_articles: list) -> None:
-    index_lines = [
-        "# SpeedCE 技术推广软文全集（100 篇）",
+def _build_readme_lines(all_articles: list, article_link_prefix: str) -> list[str]:
+    lines = [
+        "# SpeedCE 站长知识库",
         "",
+        "> 多节点网站测速 · 网络排障 · 100 篇站长技术文章",
         f"> 工具官网：[speedce.com]({BASE_URL}) | 中文版：[?lang=zh-CN]({ZH_URL})",
         f"> 联系：{CONTACT}",
         "",
@@ -129,9 +133,11 @@ def write_readme(all_articles: list) -> None:
     ]
     for a in sorted([x for x in all_articles if x["id"] <= 50], key=lambda x: x["id"]):
         fn = f"{a['id']:03d}-{a['slug']}.md"
-        index_lines.append(f"| {a['id']} | {a['title']} | {a['category']} | [{fn}](./{fn}) |")
+        lines.append(
+            f"| {a['id']} | {a['title']} | {a['category']} | [{fn}]({article_link_prefix}{fn}) |"
+        )
 
-    index_lines.extend([
+    lines.extend([
         "",
         "## 第二批（051–100）",
         "",
@@ -140,22 +146,34 @@ def write_readme(all_articles: list) -> None:
     ])
     for a in sorted([x for x in all_articles if x["id"] > 50], key=lambda x: x["id"]):
         fn = f"{a['id']:03d}-{a['slug']}.md"
-        index_lines.append(f"| {a['id']} | {a['title']} | {a['category']} | [{fn}](./{fn}) |")
+        lines.append(
+            f"| {a['id']} | {a['title']} | {a['category']} | [{fn}]({article_link_prefix}{fn}) |"
+        )
 
-    cats = {}
+    cats: dict[str, list] = {}
     for a in all_articles:
         cats.setdefault(a["category"], []).append(a)
-    index_lines.extend(["", "## 分类统计（全 100 篇）", ""])
+    lines.extend(["", "## 分类统计", ""])
     for cat, items in sorted(cats.items()):
-        index_lines.append(f"- **{cat}**：{len(items)} 篇")
+        lines.append(f"- **{cat}**：{len(items)} 篇")
 
-    index_lines.extend([
+    lines.extend([
         "",
-        "## 站点生成",
+        "## 生成脚本",
         "",
-        "- 站点资源：`python3 scripts/generate_site_assets.py`",
         "- 第一批：`python3 scripts/generate_speedce_articles.py`",
         "- 第二批：`python3 scripts/generate_speedce_articles_batch2.py`",
         "- 全部重建：`python3 scripts/generate_all_speedce_articles.py`",
+        "",
+        "---",
+        "",
+        "SpeedCE — 覆盖中国各省市 · 全球节点 · 一键检测网络连通性",
     ])
-    (ARTICLES_DIR / "README.md").write_text("\n".join(index_lines) + "\n", encoding="utf-8")
+    return lines
+
+
+def write_readme(all_articles: list) -> None:
+    """Write identical README to repo root and docs/articles/."""
+    content = "\n".join(_build_readme_lines(all_articles, "docs/articles/")) + "\n"
+    ROOT_README.write_text(content, encoding="utf-8")
+    ARTICLES_README.write_text(content, encoding="utf-8")
