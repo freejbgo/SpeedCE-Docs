@@ -151,16 +151,11 @@ def write_readme(all_articles: list) -> None:
 
     index_lines.extend([
         "",
-        "## 生成脚本",
+        "## 站点生成",
         "",
+        "- 站点资源：`python3 scripts/generate_site_assets.py`",
         "- 第一批：`python3 scripts/generate_speedce_articles.py`",
         "- 第二批：`python3 scripts/generate_speedce_articles_batch2.py`",
         "- 全部重建：`python3 scripts/generate_all_speedce_articles.py`",
-        "",
-        "## 相关长文",
-        "",
-        "- [产品介绍](../speedce-推广文章.md)",
-        "- [实战排查手册](../speedce-推广文章-实战排查手册.md)",
-        "- [2026 工具横评](../speedce-2026在线网站测速工具横评.md)",
     ])
     (ARTICLES_DIR / "README.md").write_text("\n".join(index_lines) + "\n", encoding="utf-8")

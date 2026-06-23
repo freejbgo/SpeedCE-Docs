@@ -1,0 +1,27 @@
+---
+layout: default
+---
+<article class="article-page">
+  {% if page.category %}
+  <p><strong>分类：</strong>{{ page.category }}{% if page.keywords %} · <strong>关键词：</strong>{{ page.keywords }}{% endif %}</p>
+  {% endif %}
+  {{ content }}
+  <hr>
+  {% assign nav_id = page.name | slice: 0, 3 %}
+  {% assign nav = site.data.article_nav[nav_id] %}
+  {% if nav %}
+  <p>
+    {% if nav.previous %}
+    ← <a href="{{ nav.previous.url | relative_url }}">{{ nav.previous.title }}</a>
+    {% endif %}
+    {% if nav.next %}
+    {% if nav.previous %} | {% endif %}
+    <a href="{{ nav.next.url | relative_url }}">{{ nav.next.title }}</a> →
+    {% endif %}
+  </p>
+  {% endif %}
+  <p>
+    <a href="{{ '/articles/' | relative_url }}">返回文章目录</a>
+    · <a href="{{ '/categories/' | relative_url }}">按分类浏览</a>
+  </p>
+</article>
