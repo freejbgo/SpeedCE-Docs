@@ -1,8 +1,8 @@
-name: Deploy GitHub Pages
+# Optional: use after enabling GitHub Pages with "GitHub Actions" as source.
+# Recommended one-time setup instead: Settings → Pages → Deploy from branch → main → /docs
+name: Deploy GitHub Pages (Actions)
 
 on:
-  push:
-    branches: [main]
   workflow_dispatch:
 
 permissions:
@@ -26,8 +26,6 @@ jobs:
 
       - name: Setup Pages
         uses: actions/configure-pages@v5
-        with:
-          enablement: true
 
       - name: Build with Jekyll
         uses: actions/jekyll-build-pages@v1
@@ -54,7 +52,6 @@ jobs:
   notify-search-engines:
     needs: deploy
     runs-on: ubuntu-latest
-    if: github.ref == 'refs/heads/main'
     steps:
       - name: Ping search engine sitemaps
         run: |

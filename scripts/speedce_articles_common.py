@@ -158,3 +158,10 @@ def write_readme(all_articles: list) -> None:
     content = "\n".join(_build_readme_lines(all_articles, "docs/articles/")) + "\n"
     ROOT_README.write_text(content, encoding="utf-8")
     ARTICLES_README.write_text(content, encoding="utf-8")
+    import subprocess
+    import sys
+
+    subprocess.run(
+        [sys.executable, str(REPO_ROOT / "scripts" / "generate_seo_files.py")],
+        check=False,
+    )
