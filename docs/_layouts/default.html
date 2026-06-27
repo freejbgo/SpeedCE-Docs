@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="{{ page.lang | default: site.lang | default: 'zh-CN' }}">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="robots" content="index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1">
+  {% if page.keywords %}
+  <meta name="keywords" content="{{ page.keywords }}">
+  {% endif %}
+  {% if page.category %}
+  <meta name="article:section" content="{{ page.category }}">
+  {% endif %}
+  <link rel="canonical" href="{{ page.url | absolute_url }}">
+  <link rel="alternate" type="application/rss+xml" title="{{ site.title | escape }}" href="{{ '/feed.xml' | absolute_url }}">
+  <link rel="alternate" type="text/plain" href="{{ '/llms.txt' | absolute_url }}" title="LLM site index">
+  {% seo %}
+  <style>
+    :root { color-scheme: light dark; }
+    body {
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "PingFang SC",
+        "Hiragino Sans GB", "Microsoft YaHei", sans-serif;
+      line-height: 1.7;
+      max-width: 48rem;
+      margin: 0 auto;
+      padding: 1.5rem;
+      color: #1a1a1a;
+      background: #fff;
+    }
+    @media (prefers-color-scheme: dark) {
+      body { color: #e8e8e8; background: #111; }
+      a { color: #6db3f2; }
+      blockquote { border-color: #444; color: #bbb; }
+      th, td { border-color: #444; }
+    }
+    a { color: #0969da; }
+    header { margin-bottom: 2rem; padding-bottom: 1rem; border-bottom: 1px solid #ddd; }
+    header nav a { margin-right: 1rem; }
+    footer { margin-top: 3rem; padding-top: 1rem; border-top: 1px solid #ddd; font-size: 0.9rem; color: #666; }
+    table { border-collapse: collapse; width: 100%; font-size: 0.92rem; }
+    th, td { border: 1px solid #ddd; padding: 0.4rem 0.6rem; text-align: left; }
+    blockquote { border-left: 4px solid #ddd; margin-left: 0; padding-left: 1rem; color: #555; }
+    .article-meta { font-size: 0.9rem; color: #666; margin-bottom: 1.5rem; }
+    .article-meta span { margin-right: 1rem; }
+  </style>
+</head>
+<body>
+  <header>
+    <p><strong><a href="{{ '/' | relative_url }}">{{ site.title }}</a></strong></p>
+    <nav aria-label="站点导航">
+      <a href="{{ '/' | relative_url }}">首页</a>
+      <a href="{{ '/articles/' | relative_url }}">文章目录</a>
+      <a href="{{ '/llms.txt' | relative_url }}">AI 索引</a>
+      <a href="https://www.speedce.com/?lang=zh-CN" rel="noopener">SpeedCE 测速</a>
+    </nav>
+  </header>
+
+  <main>
+    {{ content }}
+  </main>
+
+  <footer>
+    <p>
+      <strong>SpeedCE</strong> — 覆盖中国各省市 · 全球节点 · 一键检测网络连通性<br>
+      官网：<a href="https://www.speedce.com">speedce.com</a> |
+      中文：<a href="https://speedce.com/?lang=zh-CN">speedce.com/?lang=zh-CN</a> |
+      联系：<a href="mailto:speedceads@gmail.com">speedceads@gmail.com</a>
+    </p>
+    <p>知识库源码：<a href="https://github.com/freejbgo/SpeedCE-Docs">GitHub</a></p>
+  </footer>
+</body>
+</html>

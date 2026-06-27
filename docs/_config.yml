@@ -1,0 +1,33 @@
+title: SpeedCE 站长知识库
+description: 多节点网站测速 · 网络排障 · 100 篇站长技术文章。涵盖电信联通移动三网测速、CDN 验收、HTTPS 证书检测、VPS 线路验证等站长实战指南。
+url: https://freejbgo.github.io
+baseurl: /SpeedCE-Docs
+lang: zh-CN
+timezone: Asia/Shanghai
+
+author:
+  name: SpeedCE
+  email: speedceads@gmail.com
+
+# GitHub Pages supported plugins
+plugins:
+  - jekyll-seo-tag
+  - jekyll-sitemap
+  - jekyll-feed
+
+# Article pages use the article layout and feed metadata
+defaults:
+  - scope:
+      path: "articles"
+      type: "pages"
+    values:
+      layout: article
+      tool: SpeedCE
+
+exclude:
+  - issue-drafts
+  - Gemfile
+  - Gemfile.lock
+
+# Clean URLs: /articles/001-xxx/ instead of .html
+permalink: pretty

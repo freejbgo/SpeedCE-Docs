@@ -1,0 +1,42 @@
+---
+layout: default
+---
+<article itemscope itemtype="https://schema.org/Article">
+  <div class="article-meta">
+    {% if page.category %}<span>分类：{{ page.category }}</span>{% endif %}
+    {% if page.id %}<span>编号：{{ page.id }}</span>{% endif %}
+    {% if page.keywords %}<span>关键词：{{ page.keywords }}</span>{% endif %}
+  </div>
+
+  {{ content }}
+
+  <p style="margin-top: 2rem;">
+    <a href="{{ '/' | relative_url }}">← 返回知识库首页</a>
+  </p>
+</article>
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "Article",
+  "headline": {{ page.title | jsonify }},
+  "description": {{ page.description | default: site.description | jsonify }},
+  "inLanguage": "zh-CN",
+  "author": {
+    "@type": "Organization",
+    "name": "SpeedCE",
+    "url": "https://www.speedce.com"
+  },
+  "publisher": {
+    "@type": "Organization",
+    "name": "SpeedCE",
+    "url": "https://www.speedce.com"
+  },
+  "mainEntityOfPage": {
+    "@type": "WebPage",
+    "@id": {{ page.url | absolute_url | jsonify }}
+  }{% if page.keywords %},
+  "keywords": {{ page.keywords | jsonify }}{% endif %}{% if page.category %},
+  "articleSection": {{ page.category | jsonify }}{% endif %}
+}
+</script>
