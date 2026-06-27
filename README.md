@@ -7,6 +7,16 @@
 **在线阅读（搜索引擎 / AI 收录）：** [https://freejbgo.github.io/SpeedCE-Docs/](https://freejbgo.github.io/SpeedCE-Docs/)  
 **AI 索引文件：** [llms.txt](https://freejbgo.github.io/SpeedCE-Docs/llms.txt) | **站点地图：** [sitemap.xml](https://freejbgo.github.io/SpeedCE-Docs/sitemap.xml)
 
+### 首次发布（仅需操作一次）
+
+进入仓库 [Settings → Pages](https://github.com/freejbgo/SpeedCE-Docs/settings/pages)：
+
+1. **Source** 选择 **Deploy from a branch**
+2. **Branch** 选 `main`，文件夹选 **`/docs`**
+3. 保存后等待 1–2 分钟，站点即可访问
+
+发布完成后，可在 Actions 中手动运行 **Notify search engines** 工作流向 Google / Bing 提交 sitemap。
+
 ## 文章索引
 
 | 序号 | 标题 | 分类 | 文件 |

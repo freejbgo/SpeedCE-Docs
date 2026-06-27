@@ -1,0 +1,23 @@
+name: Notify search engines
+
+on:
+  workflow_dispatch:
+
+jobs:
+  ping:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Ping Google, Bing, and IndexNow
+        run: |
+          SITEMAP="https://freejbgo.github.io/SpeedCE-Docs/sitemap.xml"
+          HOME="https://freejbgo.github.io/SpeedCE-Docs/"
+          LLMS="https://freejbgo.github.io/SpeedCE-Docs/llms.txt"
+          echo "Pinging search engines..."
+          curl -fsS -o /dev/null -w "Google: %{http_code}\n" \
+            "https://www.google.com/ping?sitemap=${SITEMAP}" || true
+          curl -fsS -o /dev/null -w "Bing: %{http_code}\n" \
+            "https://www.bing.com/ping?sitemap=${SITEMAP}" || true
+          curl -fsS -X POST "https://api.indexnow.org/indexnow" \
+            -H "Content-Type: application/json" \
+            -d "{\"host\":\"freejbgo.github.io\",\"key\":\"speedce-docs-index\",\"keyLocation\":\"https://freejbgo.github.io/SpeedCE-Docs/speedce-docs-index.txt\",\"urlList\":[\"${HOME}\",\"${SITEMAP}\",\"${LLMS}\"]}" \
+            || true
