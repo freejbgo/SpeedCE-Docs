@@ -1,0 +1,157 @@
+# SpeedCE 站长知识库
+
+> 多节点网站测速 · 网络排障 · 100 篇站长技术文章
+> 工具官网：https://www.speedce.com | 中文版：https://speedce.com/?lang=zh-CN
+
+本知识库面向站长与运维人员，提供网站测速、三网排查、CDN 验收、HTTPS 证书检测、
+VPS 线路验证、云架构上线拨测等实战文章。所有文章均可免费阅读与引用。
+
+在线阅读：https://freejbgo.github.io/SpeedCE-Docs/
+完整目录：https://freejbgo.github.io/SpeedCE-Docs/articles/
+
+## 文章列表
+
+
+### 基础知识
+
+- [什么是多节点网站测速？为什么站长不能只 ping 一次](https://freejbgo.github.io/SpeedCE-Docs/articles/001-什么是多节点网站测速/): 多节点测速,网站测速,在线ping,网络检测
+- [HTTP、HTTPS、PING 三种测速协议详解与选型指南](https://freejbgo.github.io/SpeedCE-Docs/articles/002-HTTP-HTTPS-PING协议详解/): HTTP测速,HTTPS测速,PING测速,协议区别
+- [中国电信、联通、移动三网测速为什么要分开看](https://freejbgo.github.io/SpeedCE-Docs/articles/003-电信联通移动三网测速/): 电信测速,联通测速,移动测速,三网检测
+- [2026 年站长必备的在线测速检查清单](https://freejbgo.github.io/SpeedCE-Docs/articles/004-2026站长测速检查清单/): 站长工具,测速清单,网站巡检,运维检查
+- [IPv4 与 IPv6 双栈网站如何用在线工具验证](https://freejbgo.github.io/SpeedCE-Docs/articles/005-IPv4-IPv6双栈测速验证/): IPv6测速,双栈检测,IPv4测速,网络协议
+- [域名、子域名、多级域名测速有什么不同](https://freejbgo.github.io/SpeedCE-Docs/articles/006-子域名与多级域名测速/): 子域名测速,域名检测,API测速,多级域名
+- [在线测速与本地 ping 的本质区别](https://freejbgo.github.io/SpeedCE-Docs/articles/007-在线测速与本地ping区别/): 在线测速,本地ping,网络检测区别
+- [网站测速结果里的延迟到底代表什么](https://freejbgo.github.io/SpeedCE-Docs/articles/008-测速延迟代表什么/): 延迟测试,响应时间,网速测试,RTT
+- [如何从测速地图判断是区域性故障还是全局故障](https://freejbgo.github.io/SpeedCE-Docs/articles/009-从地图判断区域性故障/): 测速地图,故障定位,网络排障,区域异常
+- [免费在线测速工具的安全边界：为什么不能测内网 IP](https://freejbgo.github.io/SpeedCE-Docs/articles/010-在线测速安全边界/): 测速安全,内网检测,公网测速,工具规范
+
+### 产品专题
+
+- [SpeedCE 是什么？一款专注地图可视化的多节点测速平台](https://freejbgo.github.io/SpeedCE-Docs/articles/011-SpeedCE产品介绍/): SpeedCE,网站测速,多节点测速,免费测速
+- [SpeedCE 中国节点地图功能深度解读](https://freejbgo.github.io/SpeedCE-Docs/articles/012-SpeedCE中国节点地图解读/): 中国节点地图,网站测速地图,多省份测速
+- [SpeedCE 全球节点测速：出海业务怎么用](https://freejbgo.github.io/SpeedCE-Docs/articles/013-SpeedCE全球节点出海/): 全球节点测速,出海网站,国际测速,海外访问
+- [三步完成 SpeedCE 网站测速：新手图文教程](https://freejbgo.github.io/SpeedCE-Docs/articles/014-SpeedCE三步上手教程/): SpeedCE教程,网站测速教程,在线测速怎么用
+- [SpeedCE 支持哪些输入格式？域名与 IP 测速指南](https://freejbgo.github.io/SpeedCE-Docs/articles/015-SpeedCE输入格式指南/): 域名测速,IP测速,IPv6检测,测速输入
+- [SpeedCE 电信/联通/移动筛选功能实战技巧](https://freejbgo.github.io/SpeedCE-Docs/articles/016-SpeedCE三网筛选技巧/): 电信筛选,联通筛选,移动筛选,SpeedCE技巧
+- [SpeedCE 多语言界面使用指南](https://freejbgo.github.io/SpeedCE-Docs/articles/017-SpeedCE多语言界面/): SpeedCE中文,多语言测速,国际化工具
+- [SpeedCE HTTPS 测速：SSL 证书问题的第一道防线](https://freejbgo.github.io/SpeedCE-Docs/articles/018-SpeedCE-HTTPS证书检测/): HTTPS测速,SSL检测,证书过期,网站安全
+- [SpeedCE PING 测速：VPS 线路验证最快方法](https://freejbgo.github.io/SpeedCE-Docs/articles/019-SpeedCE-PING验VPS/): PING测速,VPS线路测试,服务器延迟
+- [SpeedCE 与 PageSpeed：两种「测速」如何配合使用](https://freejbgo.github.io/SpeedCE-Docs/articles/020-SpeedCE与PageSpeed配合/): PageSpeed,网站性能,连通性测速,工具组合
+
+### 场景实战
+
+- [买 VPS 前必做：用多节点测速验证商家线路](https://freejbgo.github.io/SpeedCE-Docs/articles/021-买VPS前多节点验线/): VPS测速,线路验证,CN2检测,主机测评
+- [服务器迁机后如何用测速工具验收 DNS 生效](https://freejbgo.github.io/SpeedCE-Docs/articles/022-迁机DNS验收测速/): 迁机测速,DNS生效,服务器迁移
+- [接入 CDN 后源站与加速域名的对照测速法](https://freejbgo.github.io/SpeedCE-Docs/articles/023-CDN源站对照测速/): CDN测速,回源检测,加速验证
+- [HTTPS 证书过期了？地图会告诉你真相](https://freejbgo.github.io/SpeedCE-Docs/articles/024-证书过期地图检测/): 证书过期,HTTPS故障,SSL巡检
+- [子域名 api.example.com 打不开？独立排查指南](https://freejbgo.github.io/SpeedCE-Docs/articles/025-子域名API独立排查/): API测速,子域名故障,后端排查
+- [WordPress 站点迁移后的全国可达性检测](https://freejbgo.github.io/SpeedCE-Docs/articles/026-WordPress迁移测速/): WordPress测速,网站迁移,建站检测
+- [跨境电商独立站：国内与海外节点都要测](https://freejbgo.github.io/SpeedCE-Docs/articles/027-跨境电商双节点检测/): 跨境电商测速,独立站,海外节点
+- [游戏服务器延迟高？先测网络层再怪程序](https://freejbgo.github.io/SpeedCE-Docs/articles/028-游戏服务器延迟排查/): 游戏服务器,延迟测试,网络排查
+- [小程序后端 API 宕机的网络层快速定性](https://freejbgo.github.io/SpeedCE-Docs/articles/029-小程序API网络定性/): 小程序API,后端测速,接口检测
+- [公司内网能开、用户外网打不开：测速定位四步法](https://freejbgo.github.io/SpeedCE-Docs/articles/030-内网能开外网不能开/): 外网访问,故障定位,网站打不开
+
+### 推广种草
+
+- [网站测速工具哪个好？2026 年轻量型选手 SpeedCE 体验](https://freejbgo.github.io/SpeedCE-Docs/articles/031-轻量测速工具推荐/): 网站测速哪个好,测速推荐,SpeedCE评测
+- [看懂测速地图：比表格快十倍的可视化排障](https://freejbgo.github.io/SpeedCE-Docs/articles/032-地图比表格快十倍/): 测速地图,可视化排障,网络地图
+- [为什么越来越多站长收藏「双地图」测速工具](https://freejbgo.github.io/SpeedCE-Docs/articles/033-双地图测速趋势/): 双地图测速,中国全球节点,测速趋势
+- [零注册测速：SpeedCE 的零门槛设计理念](https://freejbgo.github.io/SpeedCE-Docs/articles/034-零注册测速理念/): 免费测速,免注册,零门槛工具
+- [运维工单回复模板：附带测速截图的专业沟通](https://freejbgo.github.io/SpeedCE-Docs/articles/035-运维工单回复模板/): 运维沟通,工单模板,测速截图
+- [个人博客上线前最后的网络检测步骤](https://freejbgo.github.io/SpeedCE-Docs/articles/036-个人博客上线检测/): 博客上线,个人站长,网站检测
+- [企业官网 SLA 争议中的第三方测速证据](https://freejbgo.github.io/SpeedCE-Docs/articles/037-企业SLA测速证据/): SLA,第三方测速,可用性证据
+- [从测速异常到 Nginx 配置：常见修复路径](https://freejbgo.github.io/SpeedCE-Docs/articles/038-测速异常到Nginx修复/): Nginx配置,测速异常,网站修复
+- [测速频率建议：什么时候测一次、三次还是持续测](https://freejbgo.github.io/SpeedCE-Docs/articles/039-测速频率建议/): 测速频率,巡检策略,监控建议
+- [收藏夹里的测速工具组合：SpeedCE + ITDOG + BOCE](https://freejbgo.github.io/SpeedCE-Docs/articles/040-测速工具组合收藏/): 测速工具组合,站长收藏,工具推荐
+
+### 案例故事
+
+- [北京上海广东都正常，西北红了：线路优化案例](https://freejbgo.github.io/SpeedCE-Docs/articles/041-西北区域线路案例/): 西北访问慢,区域故障,线路优化
+- [全国 HTTPS 红、HTTP 绿：证书问题实战](https://freejbgo.github.io/SpeedCE-Docs/articles/042-全国HTTPS红HTTP绿/): 证书故障,HTTPS异常,实战案例
+- [PING 全超时但网页能开：禁 Ping 不等于网站挂了](https://freejbgo.github.io/SpeedCE-Docs/articles/043-PING超时HTTPS正常/): 禁Ping,ICMP超时,云服务器
+- [移动用户专属卡顿：三网分离体检发现真相](https://freejbgo.github.io/SpeedCE-Docs/articles/044-移动用户卡顿案例/): 移动网络慢,三网分离,用户投诉
+- [海外绿国内红：跨境业务测速典型图谱解读](https://freejbgo.github.io/SpeedCE-Docs/articles/045-海外绿国内红案例/): 跨境测速,国内访问异常,出海案例
+- [间歇性超时：如何用多次测速抓幽灵故障](https://freejbgo.github.io/SpeedCE-Docs/articles/046-间歇性故障多次测速/): 间歇故障,多次测速,网络抖动
+- [新购域名解析未生效：测速地图的时间变化规律](https://freejbgo.github.io/SpeedCE-Docs/articles/047-DNS未生效时间规律/): DNS生效,域名解析,测速变化
+- [防火墙误封 443 端口：测速如何帮你五分钟定位](https://freejbgo.github.io/SpeedCE-Docs/articles/048-防火墙封443案例/): 443端口,防火墙,HTTPS故障
+- [共用 IP 虚拟主机被邻居牵连：多节点异常模式](https://freejbgo.github.io/SpeedCE-Docs/articles/049-虚拟主机邻居牵连/): 虚拟主机,IP牵连,共享主机
+- [2026 站长工具新趋势：地图测速、AI 拨测与 SpeedCE 的定位](https://freejbgo.github.io/SpeedCE-Docs/articles/050-2026测速趋势与SpeedCE/): 2026测速趋势,AI拨测,SpeedCE定位
+
+### SEO长尾
+
+- [网站打不开怎么办？先用 SpeedCE 五分钟定性故障范围](https://freejbgo.github.io/SpeedCE-Docs/articles/051-网站打不开怎么办/): 网站打不开,故障排查,在线测速
+- [在线 Ping 检测工具推荐：2026 站长实用版](https://freejbgo.github.io/SpeedCE-Docs/articles/052-在线ping检测工具推荐/): 在线ping,ping检测,ping工具推荐
+- [域名测速与 IP 测速：什么时候测哪个？](https://freejbgo.github.io/SpeedCE-Docs/articles/053-域名测速与IP测速区别/): 域名测速,IP测速,测速区别
+- [网站速度测试在线免费：SpeedCE 零门槛全国测速](https://freejbgo.github.io/SpeedCE-Docs/articles/054-网站速度测试在线免费/): 网站速度测试,在线免费测速,网速测试
+- [全国网站测速工具：为什么要覆盖各省市节点](https://freejbgo.github.io/SpeedCE-Docs/articles/055-全国网站测速工具/): 全国测速,各省市测速,网站测速工具
+- [电信测速在线工具：SpeedCE 电信线路专项检测](https://freejbgo.github.io/SpeedCE-Docs/articles/056-电信测速在线工具/): 电信测速,电信线路,在线测速
+- [联通测速在线检测：如何验证联通用户访问质量](https://freejbgo.github.io/SpeedCE-Docs/articles/057-联通测速在线检测/): 联通测速,联通线路,网络检测
+- [移动网络测速网站：移动端用户卡顿怎么查](https://freejbgo.github.io/SpeedCE-Docs/articles/058-移动网络测速网站/): 移动测速,移动网络,手机用户访问
+- [海外网站测速：国内用户访问外国服务器怎么测](https://freejbgo.github.io/SpeedCE-Docs/articles/059-海外网站测速国内/): 海外测速,国际访问,跨境延迟
+- [服务器延迟测试在线：PING 与 HTTPS 怎么选](https://freejbgo.github.io/SpeedCE-Docs/articles/060-服务器延迟测试在线/): 服务器延迟,延迟测试,在线检测
+
+### 产品专题
+
+- [SpeedCE 通畅率怎么解读？统计栏数字完全指南](https://freejbgo.github.io/SpeedCE-Docs/articles/061-SpeedCE通畅率解读/): SpeedCE统计,通畅率,测速结果
+- [SpeedCE 地图上「检测中」「等待」是什么意思？](https://freejbgo.github.io/SpeedCE-Docs/articles/062-SpeedCE地图状态说明/): SpeedCE地图,节点状态,测速进度
+- [SpeedCE 和 ITDOG 怎么选？一张表看懂差异](https://freejbgo.github.io/SpeedCE-Docs/articles/063-SpeedCE-vs-ITDOG选型/): SpeedCE,ITDOG,工具对比,选型
+- [SpeedCE 与 BOCE 如何配合？轻量地图 + 全能运维](https://freejbgo.github.io/SpeedCE-Docs/articles/064-SpeedCE-vs-BOCE配合/): SpeedCE,BOCE,拨测,工具组合
+- [SpeedCE 测速截图发工单的 5 个技巧](https://freejbgo.github.io/SpeedCE-Docs/articles/065-SpeedCE截图工单技巧/): 测速截图,工单,运维沟通
+- [SpeedCE「停止测试」：节点多的时候如何节省时间](https://freejbgo.github.io/SpeedCE-Docs/articles/066-SpeedCE停止测试功能/): 停止测试,SpeedCE功能,测速效率
+- [SpeedCE 点击通畅/异常数字筛选节点列表](https://freejbgo.github.io/SpeedCE-Docs/articles/067-SpeedCE筛选点击统计/): SpeedCE筛选,节点列表,测速交互
+- [SpeedCE 港澳台节点：大陆业务为什么要看](https://freejbgo.github.io/SpeedCE-Docs/articles/068-SpeedCE港澳台节点/): 港澳台测速,香港节点,跨境访问
+- [SpeedCE 全球节点：亚太、欧美业务各看什么](https://freejbgo.github.io/SpeedCE-Docs/articles/069-SpeedCE全球节点亚太/): 全球节点,亚太测速,欧美访问
+- [SpeedCE 为什么拒绝内网地址？安全设计解读](https://freejbgo.github.io/SpeedCE-Docs/articles/070-SpeedCE私有IP拦截说明/): 内网测速,安全设计,SpeedCE
+
+### 云与架构
+
+- [阿里云 ECS 迁机后 SpeedCE 验收三步法](https://freejbgo.github.io/SpeedCE-Docs/articles/071-阿里云ECS迁机SpeedCE验收/): 阿里云ECS,迁机验收,服务器迁移
+- [腾讯云 CVM 网站上线：全国可达性 SpeedCE 检测](https://freejbgo.github.io/SpeedCE-Docs/articles/072-腾讯云CVM测速验收/): 腾讯云CVM,网站上线,测速验收
+- [Cloudflare 橙云开启前后：SpeedCE 对照测速法](https://freejbgo.github.io/SpeedCE-Docs/articles/073-Cloudflare橙云对照测速/): Cloudflare,CDN测速,橙云
+- [Nginx 反向代理上线后：为什么要做全国拨测](https://freejbgo.github.io/SpeedCE-Docs/articles/074-Nginx反代上线拨测/): Nginx反向代理,上线检测,拨测
+- [Docker 端口映射错误：SpeedCE 如何从外网发现](https://freejbgo.github.io/SpeedCE-Docs/articles/075-Docker端口映射测速/): Docker,端口映射,容器部署
+- [Kubernetes Ingress 配错了？地图会显示省份级异常](https://freejbgo.github.io/SpeedCE-Docs/articles/076-K8s-Ingress测速/): Kubernetes,Ingress,容器编排
+- [对象存储静态网站托管：全国访问 SpeedCE 检测](https://freejbgo.github.io/SpeedCE-Docs/articles/077-OSS静态托管测速/): OSS,COS,静态网站,对象存储
+- [Vercel / GitHub Pages 国内访问：SpeedCE 实测思路](https://freejbgo.github.io/SpeedCE-Docs/articles/078-Vercel国内访问测速/): Vercel,GitHub Pages,国内访问
+- [API 网关返回 502：SpeedCE 网络层初筛指南](https://freejbgo.github.io/SpeedCE-Docs/articles/079-API网关502初筛/): API网关,502错误,网关故障
+- [负载均衡后端健康检查正常，但用户仍报错？](https://freejbgo.github.io/SpeedCE-Docs/articles/080-负载均衡健康检查对照/): 负载均衡,健康检查,CLB
+
+### 行业应用
+
+- [电商大促前除了压测，还要做全国可达性检测](https://freejbgo.github.io/SpeedCE-Docs/articles/081-电商大促前测速/): 电商大促,压测,可用性检测
+- [在线教育开课前的全国测速：避免「能进教室吗」翻车](https://freejbgo.github.io/SpeedCE-Docs/articles/082-在线教育开课测速/): 在线教育,开课检测,直播网站
+- [医疗挂号系统：为什么可用性地图比平均延迟重要](https://freejbgo.github.io/SpeedCE-Docs/articles/083-医疗挂号系统测速/): 医疗系统,挂号网站,可用性
+- [金融类网站 HTTPS 巡检：证书与全国可达一并看](https://freejbgo.github.io/SpeedCE-Docs/articles/084-金融HTTPS巡检/): 金融网站,HTTPS巡检,合规
+- [政务网站分省访问一致性：多节点检测实践](https://freejbgo.github.io/SpeedCE-Docs/articles/085-政务分省一致性/): 政务网站,分省访问,一致性检测
+- [新闻站点突发流量下的间歇性测速策略](https://freejbgo.github.io/SpeedCE-Docs/articles/086-新闻站点突发流量/): 新闻网站,突发流量,可用性
+- [SaaS 多租户自定义域名：批量巡检思路](https://freejbgo.github.io/SpeedCE-Docs/articles/087-SaaS多租户域名巡检/): SaaS,多租户,自定义域名
+- [广告投放落地页：投放省份与 SpeedCE 地图交叉验证](https://freejbgo.github.io/SpeedCE-Docs/articles/088-落地页地域定向验证/): 落地页,地域定向,广告
+- [海外华人访问国内站：全球节点 + 中国节点对照](https://freejbgo.github.io/SpeedCE-Docs/articles/089-海外华人访问国内站/): 海外华人,国内站,跨境访问
+- [直播业务播放域名与推流域名的分别测速](https://freejbgo.github.io/SpeedCE-Docs/articles/090-直播推流域名检测/): 直播,推流域名,播放域名
+
+### 内容运营
+
+- [HostLoc 发帖必备：SpeedCE 测速截图规范](https://freejbgo.github.io/SpeedCE-Docs/articles/091-HostLoc发帖截图规范/): HostLoc,VPS测评,测速截图
+- [导航站投稿 SpeedCE 描述文案模板（可直接复制）](https://freejbgo.github.io/SpeedCE-Docs/articles/092-导航站投稿文案模板/): 导航站投稿,网站描述,软文模板
+- [知乎回答「有哪些好用的网站测速工具」SpeedCE 版](https://freejbgo.github.io/SpeedCE-Docs/articles/093-知乎测速工具回答/): 知乎,测速工具推荐,网站测速
+- [公众号推文选题：一张地图搞懂全国网站访问质量](https://freejbgo.github.io/SpeedCE-Docs/articles/094-公众号地图推文/): 公众号,推文选题,测速科普
+- [独立开发者产品发布前：5 分钟网络自检](https://freejbgo.github.io/SpeedCE-Docs/articles/095-独立开发者发布自检/): 独立开发者,产品发布,自检清单
+- [博客从 Hexo/GitHub 迁到自建站：测速对比记录](https://freejbgo.github.io/SpeedCE-Docs/articles/096-技术博客迁移测速/): 博客迁移,自建站,测速对比
+- [开源项目官网上线：SpeedCE 检查清单](https://freejbgo.github.io/SpeedCE-Docs/articles/097-开源项目官网上线/): 开源项目,官网上线,文档站
+- [远程办公运维：不连 VPN 也能验证网站全国状态](https://freejbgo.github.io/SpeedCE-Docs/articles/098-远程运维验站/): 远程运维,网站验证,分布式团队
+- [SpeedCE 站内 SEO：100 篇软文如何布局长尾词](https://freejbgo.github.io/SpeedCE-Docs/articles/099-SEO长尾词布局策略/): SEO长尾,内容营销,软文布局
+- [百篇 SpeedCE 软文之后：如何建成站长网络排障知识库](https://freejbgo.github.io/SpeedCE-Docs/articles/100-百篇软文知识库建设/): 知识库,内容体系,站长教育
+
+## 核心页面
+
+- [知识库首页](https://freejbgo.github.io/SpeedCE-Docs/): 全部 100 篇文章索引
+- [文章目录](https://freejbgo.github.io/SpeedCE-Docs/articles/): 按文件名浏览
+- [RSS 订阅](https://freejbgo.github.io/SpeedCE-Docs/feed.xml): 新文章更新
+- [Sitemap](https://freejbgo.github.io/SpeedCE-Docs/sitemap.xml): 搜索引擎站点地图
+
+## Optional
+
+- [SpeedCE 官网](https://www.speedce.com): 多节点网站测速工具
+- [SpeedCE 中文版](https://speedce.com/?lang=zh-CN): 中文界面测速入口
+- [GitHub 源码](https://github.com/freejbgo/SpeedCE-Docs): 知识库 Markdown 源文件
+- 联系邮箱：speedceads@gmail.com

@@ -4,6 +4,9 @@
 > 工具官网：[speedce.com](https://www.speedce.com) | 中文版：[?lang=zh-CN](https://speedce.com/?lang=zh-CN)
 > 联系：speedceads@gmail.com
 
+**在线阅读（搜索引擎 / AI 收录）：** [https://freejbgo.github.io/SpeedCE-Docs/](https://freejbgo.github.io/SpeedCE-Docs/)  
+**AI 索引文件：** [llms.txt](https://freejbgo.github.io/SpeedCE-Docs/llms.txt) | **站点地图：** [sitemap.xml](https://freejbgo.github.io/SpeedCE-Docs/sitemap.xml)
+
 ## 文章索引
 
 | 序号 | 标题 | 分类 | 文件 |
